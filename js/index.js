@@ -65,6 +65,34 @@ function setPrediction(obj) {
     }
 }
 
+function findPopularLang(username){
+    let response = await fetch(`https://api.github.com/users/${username}/repos?pushed`);
+    let data = await response.json();
+    
+    console.log(data);
+    languages = []
+    for (repo of data.languages){
+        response = await fetch(`https://api.github.com/repos/${username}/${repo.title}/languages`);
+        repo_langs = await response.json();
+        languages = Object.assign({}, repo_langs, languages);
+    }
+
+    console.log(languages);
+
+    // Create languages array
+    var languages = Object.keys(dict).map(function(key) {
+        return [key, dict[key]];
+    });
+    
+    // Sort the array based on the second element
+    languages.sort(function(first, second) {
+        return second[1] - first[1];
+    });
+    
+    // Create a new array with only the first 5 languages
+  console.log(languages.slice(0, 5));
+    
+}
 
 // this function check input name validity
 function checkValidity(name) {
