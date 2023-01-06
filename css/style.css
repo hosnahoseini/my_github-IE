@@ -13,7 +13,7 @@ body {
 */
 
 .container {
-    width: 65%;
+    width: 80%;
     
     display: flex;
     flex-direction: row;
@@ -93,8 +93,12 @@ body {
     justify-content: center;
     background-color: rgb(179, 144, 212);
     opacity: 0.7;
+    padding: 5px;
 }
 
+/*
+    Show profile image in circule 
+*/
 #avatar{
     border-radius: 50%;
     width: 40%;
@@ -103,6 +107,9 @@ body {
     margin: 10px;
 }
 
+/*
+    Info section
+*/
 .user_info{
     display: flex;
     flex-direction: row;
@@ -110,13 +117,19 @@ body {
     align-items: center;
 }
 
-.user_bio{
+/*
+    Bio section (gray rectangle)
+*/
+#userBio{
     padding: 10px;
     border-radius: 10px;
     background-color: gray;
     margin: 5px;
 }
 
+/*
+    Text info like (Name, Blog, Location)
+*/
 #text_info{
     display: flex;
     flex-direction: column;
@@ -124,10 +137,17 @@ body {
     height: 40%;
 }
 
+/*
+    Title in text (Bold)
+*/
 .title{
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/*
+    field set of right section
+*/
 .from_fieldset{
     display: flex;
     flex-direction: column;
@@ -135,8 +155,21 @@ body {
     align-items: center;
 }
 
+/*
+    input box for username
+*/
 #name{
     margin: 5px;
     border-radius: 5px;
     border-color: rgb(65, 65, 65);
+}
+
+/*
+    favorite language box
+*/
+.favorite_lang{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(165, 165, 165, 0.315);
+    margin: 5px;
 }
