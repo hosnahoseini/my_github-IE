@@ -4,6 +4,10 @@
 Simple web app that uses GitHub APIs to find out user informations and show them in the browser.
 
 As midterm project of Internet Engineering Course at CE@AUT in Fall2022.
+### Built With
+- HTML
+- CSS
+- Java script
 
 ## Demo
 To view the website please visit [here](https://hosnahoseini.github.io/my_github-Web_project/)
